@@ -1,0 +1,391 @@
+/* ========== general ========= */
+
+body {
+    font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif;
+    font-size: 15px;
+    color: rgb(92, 52, 12);
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.title {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* ========== navbar ========= */
+
+.navbar.navbar-inverse {
+    background-color: rgb(77, 61, 45);
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0%;
+}
+
+.navbar.navbar-inverse a {
+    color: white;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* ========== slideshow ========= */
+
+.slideshow-container {
+    position: relative;
+}
+
+.mySlides {
+    max-height: 1000px;
+    min-height: 260px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slideshow-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(14, 14, 14, 0.4);
+    width: 80%;
+    height: 86%;
+    margin: auto auto;
+    border-radius: 30px;
+}
+
+.header-title {
+    color: white;
+}
+
+.header-title-one-wrap {
+    position: absolute;
+    top: 8%;
+    right: -2%;
+    border: 2px outset blanchedalmond;
+    background-color: rgba(36, 30, 25, 0.4);
+    padding: 5px;
+}
+
+.header-title-one {
+    margin: -1px;
+}
+
+.header-title-two {
+    position: absolute;
+    top: 66%;
+    left: 6%;
+    text-align: left;
+    border-bottom: 2px solid white;
+    letter-spacing: 1.6px;
+}
+
+.code {
+    position: absolute;
+    top: -4%;
+    left: 6%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 2px 2px 4px 2px black;
+}
+
+.slogan-image {
+    box-shadow: 4px 4px 6px 3px rgb(102, 73, 53);
+}
+
+
+/* ========== main body ========= */
+
+.first-row {
+    margin-top: 20px;
+}
+
+.main-body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.smaller-title {
+    font-size: large;
+}
+
+.introduction p {
+    text-align: left;
+}
+
+.information {
+    background-color: rgb(255, 253, 250);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 4px 4px 6px 3px rgb(102, 73, 53);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.map {
+    position: relative;
+    border: 5px ridge rgb(138, 106, 66);
+    transition-duration: 0.8s;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(56, 29, 7, 0.7);
+}
+
+.map:hover .map-overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.map-text {
+    color: white;
+    text-decoration: underline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/* ======== phone gallery =========== */
+
+.tesktop-gallery {
+    display: none;
+}
+
+.gallery-picture {
+    overflow: hidden;
+}
+
+.moving-picture {
+    border: 3px groove rgb(138, 106, 66);
+    background: url("../image/jdphoto/jidi-bgslide.png") repeat-x;
+    width: 4464px;
+    height: 200px;
+    animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-2232px, 0, 0);
+    }
+}
+
+
+/* ======== footer =========== */
+
+.footer {
+    background-color: rgb(87, 68, 50);
+    color: white;
+    padding: 20px 0;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+    /* ========== general ========= */
+    body {
+        font-size: 20px;
+    }
+    .header-title-one,
+    .header-title-two {
+        font-size: 1.9em;
+    }
+    /* ========== navbar ========= */
+    .navbar-nav {
+        width: auto;
+        text-align: right;
+    }
+    .code {
+        width: 100px;
+        height: 100px;
+    }
+    /* ========== main body ========= */
+    .wrap-whole {
+        background-color: rgb(255, 253, 250);
+        border-right: 2px solid rgb(102, 73, 53);
+        border-left: 2px solid rgb(102, 73, 53);
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .information p {
+        font-size: smaller;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    /* ========== general ========= */
+    body {
+        font-size: 25px;
+    }
+    .header-title-one,
+    .header-title-two {
+        font-size: 2.2em;
+    }
+    h3 {
+        font-size: 150%;
+    }
+    .first-row {
+        margin-top: 60px;
+    }
+
+    /* ========== navbar ========= */
+    .code {
+        width: 180px;
+        height: 180px;
+    }
+    .phone-gallery {
+        display: none;
+    }
+
+    /* ========== main body ========= */
+
+    .wrap-whole {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .tesktop-gallery {
+        display: block;
+    }
+    .main-gallery a {
+        text-decoration: underline;
+        color: rgb(92, 52, 12);
+    }
+    .main-gallery-stage {
+        position: relative;
+    }
+    .stage-image {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 2px solid rgb(102, 73, 53);
+    }
+    .container-main-gallery {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .main-gallery-pictures {
+        margin-left: auto;
+        margin-right: auto;
+        width: 180px;
+        perspective: 1000px;
+        height: 100%;
+    }
+    #carousel {
+        width: 100%;
+        transform-style: preserve-3d;
+        animation: rotation 30s infinite linear;
+    }
+    #carousel:hover {
+        animation-play-state: paused;
+    }
+    #carousel figure {
+        display: block;
+        position: absolute;
+        width: 90%;
+        left: 10px;
+        top: px;
+        background: rgb(82, 58, 43);
+        overflow: hidden;
+        border: ridge 5px rgb(83, 59, 43);
+    }
+    #carousel figure:nth-child(1) {
+        transform: rotateY(0deg) translateZ(288px);
+    }
+    #carousel figure:nth-child(2) {
+        transform: rotateY(40deg) translateZ(288px);
+    }
+    #carousel figure:nth-child(3) {
+        transform: rotateY(80deg) translateZ(288px);
+    }
+    #carousel figure:nth-child(4) {
+        transform: rotateY(120deg) translateZ(288px);
+    }
+    #carousel figure:nth-child(5) {
+        transform: rotateY(160deg) translateZ(288px);
+    }
+    #carousel figure:nth-child(6) {
+        transform: rotateY(200deg) translateZ(288px);
+    }
+    #carousel figure:nth-child(7) {
+        transform: rotateY(240deg) translateZ(288px);
+    }
+    #carousel figure:nth-child(8) {
+        transform: rotateY(280deg) translateZ(288px);
+    }
+    #carousel figure:nth-child(9) {
+        transform: rotateY(320deg) translateZ(288px);
+    }
+    figure img {
+        -webkit-filter: grayscale(0.3);
+        cursor: pointer;
+        transition: all .5s ease;
+    }
+    figure img:hover {
+        -webkit-filter: grayscale(0);
+        transform: scale(1.2, 1.2);
+    }
+    @keyframes rotation {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+}

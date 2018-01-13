@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif;
+    font-size: 15px;
+    color: rgb(92, 52, 12);
+    background-color: bisque;
+}
+
+
+/* ================= Header ================= */
+
+div.navbar {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    background-color: rgb(77, 61, 45);
+}
+
+.navbar ul {
+    float: right;
+    padding: 14px 20px 0 0;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: white;
+    padding: 16px;
+
+}
+
+.navbar ul li a:hover {
+    background-color: rgb(36, 15, 0);
+    color: rgb(190, 190, 190);
+    cursor: pointer;
+}
+
+div.code-image {
+    position: absolute;
+    left: 4%;
+    top: 2%;
+    padding: 12px;
+    z-index: 1;
+}
+
+.code-image img {
+    width: 140px;
+    box-shadow: 8px 8px 12px 6px black;
+}
+
+div.showheader {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+/* ================== Show: Slideshow ================== */
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:30px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+.carousel {
+    padding: 30px 0 30px 0;
+    box-shadow: 4px 4px 6px 3px rgb(102, 73, 53);
+    margin-top:6px;
+    margin-bottom:6px;
+}
+
+div.container, .container2, .namecard-container {
+    background-color: rgb(255, 248, 239);
+    padding-bottom: 22px;
+    width: 68%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 6px 3px rgb(102, 73, 53);
+}
+
+div.namecard-container {
+    padding-top: 8px;
+    margin-top: 12px;
+}
+
+div.namecard-picture {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    border: 5px ridge rgb(102, 73, 53);
+    margin-top: 20px;
+    transition-duration: 0.8s;
+}
+
+.namecard-picture-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(29, 20, 13, 0.7);
+  }
+
+  .namecard-picture:hover .namecard-picture-overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .namecard-picture-text {
+    color: white;
+    text-decoration: underline;
+    font-size: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+.namecard-text {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.namecard-text h3 {
+    text-align: center;
+}
+
+
+h2.nextshow {
+    text-align: center;
+    width: 18%;
+    z-index: 1;
+    margin-top:-66px;
+    margin-left: 20%;
+    margin-right: 40%;
+    margin-bottom: 30px;
+
+}
+
+.nextshow a {
+    color: rgb(92, 52, 12);
+    text-decoration: none;
+    font-size: 0.8em;
+    background-color: rgb(255, 248, 239);
+    padding: 12px;
+    border: 5px outset rgb(116, 96, 76);
+    border-radius: 10px;
+}
+
+.nextshow a:hover {
+    color: rgb(245, 245, 245);
+    background-color: rgb(116, 96, 76);
+}
+/* The controlsy */
+
+div.container2 {
+    background-color: rgb(255, 248, 239);
+    height: 400px;
+}
+#Carousel {
+    background-color: rgb(255, 248, 239);
+}
+
+.carousel-control.right {
+    right: -12px;
+}
+
+.col-md-3 img {
+    padding: 10px;
+}
+
+/* The indicators */
+
+.carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: -10px;
+    margin-right: -19px;
+    background-color: rgb(255, 248, 239);
+}
+
+
+/* The colour of the indicators */
+
+.carousel-indicators li {
+    background: #cecece;
+}
+
+.carousel-indicators .active {
+    background: rgb(97, 61, 25);
+}
+
+
+/* ================= Footer ================= */
+
+div.footer {
+    background-color: rgb(87, 68, 50);
+    position: relative;
+    margin-top: 12px;
+}
+
+div.social-media {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-media a {
+    display: inline;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 8px 10px 8px;
+}
+
+.social-media a:hover {
+    background-color: rgb(36, 15, 0);
+    color: rgb(190, 190, 190);
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.footer p,
+.footer p a {
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+p.footer-phone {
+    padding: 60px 10px 0px 10px;
+}
+
+p.designer {
+    padding: 0px 10px 16px 10px;
+}
+
+.designer a {
+    padding: 6px;
+}
+
+.designer a:hover {
+    background-color: rgb(36, 15, 0);
+    color: rgb(190, 190, 190);
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+
+@media (max-width: 990px) {
+    div.container2 {
+        height: 1240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        padding-right: 6px;
+    }
+    .navbar ul li a {
+        font-size: 0.8em;
+        padding: 4px;
+        border-radius: 30px;
+    }
+    .code-image img {
+        width: 56px;
+        box-shadow: 4px 4px 6px 3px black;
+    }
+
+    .hide-bullets {
+        margin-top: 0px;
+    }
+    div.container a.thumbnail {
+        display: none;
+    }
+    .social-media a {
+        text-align: right;
+        padding: 6px 3px 6px 3px;
+    }
+    h2.nextshow {
+        margin-left: 40%;
+        margin-top: -2px;
+        margin-bottom: 25px;
+    }
+    .nextshow a {
+        font-size: 0.6em;
+    }
+
+}
+@media (max-width: 320px) {
+    body {
+        font-size: 1.1em;
+    }
+    .code-image img {
+        width: 32px;
+    }
+}
+}
