@@ -1,180 +1,179 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
 
-        <title>合肥市李长云流浪小动物救助基地</title>
+    <title>合肥市李长云流浪小动物救助基地</title>
 
-        <meta charset="UTF-8">
-        <meta name="description" content="李长云小动物保护基地">
-        <meta name="keywords" content="猫,狗,动物,保护,协会,组织,基地,流浪,收养">
-        <meta name="author" content="聂芸/Yun Nie">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Content-Type" content="text/html">
-        <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具">
-        <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图">
+    <meta charset="UTF-8">
+    <meta name="description" content="李长云小动物保护基地">
+    <meta name="keywords" content="安徽,合肥,李长云,流浪,动物,猫,狗,基地,协会,组织,收养,保护">
+    <meta name="author" content="聂芸/Yun Nie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具">
+    <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link href="css/bootstrap3.3.0.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/bootstrap3.3.0.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
-        <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-        <script src="js/jquery3.2.0.min.js"></script>
-        <script src="js/jquery3.2.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery3.2.0.min.js"></script>
+    <script src="js/jquery3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
-    </head>
-
+</head>
 
 <body>
- <!-- ================== Header ================== -->
-    <div class="navbar">
-        <ul>
-            <li>
-                <a href="index.html">主页</a>
-            </li>
-            <li>
-                <a href="show.html">宝宝秀</a>
-            </li>
-            <li>
-                <a href="adoption.html">收养宝宝</a>
-            </li>
-            <li>
-                <a href="activity.html">公益活动</a>
-            </li>
-            <li>
-                <a href="joinus.html">加入我们</a>
-            </li>
-        </ul>
-    </div>
-    <div class="code-image">
-        <img src="image/code_mode.png" alt="logo">
+    <!-- ======================= navbar ==================== -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="homepage" href="index.html">主页</a>
+                    </li>
+                    <li>
+                        <a class="show" href="show.html">宝宝秀</a>
+                    </li>
+                    <li>
+                        <a class="adoption" href="adoption.html">收养宝宝</a>
+                    </li>
+                    <li>
+                        <a class="finding" href="#">走失查询</a>
+                    </li>
+                    <li>
+                        <a class="activity" href="#">公益活动</a>
+                    </li>
+                    <li>
+                        <a class="join" href="#">加入我们</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="header">
+        <div class="pages-headerimage">
+            <img src="image/adoptiontitle.jpg" alt="adoptiontitle-image">
+        </div>
+        <div class="code">
+            <img src="image/code_mode.png" alt="code" id="code">
+        </div>
     </div>
 
-    <div class="showheader">
-        <img src="image/adoptiontitle1.jpg" style="width: 100%">
-    </div>
+    <!-- ================== main ================== -->
+    <div class="main-body container-fluid">
+        <div class="row">
+            <div class="wrap-whole col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
 
-<!-- ================== Slide Show ================== -->
-    <div class="container2">
-        <div class="row2">
-            <div class="col-md-12">
-                <div id="Carousel" class="carousel slide">
-                    <ol class="carousel-indicators">
-                        <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#Carousel" data-slide-to="1"></li>
-                        <li data-target="#Carousel" data-slide-to="2"></li>
-                    </ol>
-                    <!-- Carousel items -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="image/jdphoto/jidi1.jpg" alt="Image" style="max-width:100%;">
-                                    </a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="image/jdphoto/jidi2.jpg" alt="Image" style="max-width:100%;">
-                                    </a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="image/jdphoto/jidi3.jpg" alt="Image" style="max-width:100%;">
-                                    </a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="image/jdphoto/jidi4.jpg" alt="Image" style="max-width:100%;">
-                                    </a>
-                                </div>
-                            </div>
-                            <!--.row-->
-                        </div>
-                        <!--.item-->
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="image/jdphoto/jidi5.jpg" alt="Image" style="max-width:100%;">
-                                    </a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="image/jdphoto/jidi6.jpg" alt="Image" style="max-width:100%;">
-                                    </a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="image/jdphoto/jidi7.jpg" alt="Image" style="max-width:100%;">
-                                    </a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="image/jdphoto/jidi8.jpg" alt="Image" style="max-width:100%;">
-                                    </a>
-                                </div>
-                            </div>
-                            <!--.row-->
-                        </div>
-                        <!--.item-->
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="image/jdphoto/jidi9.jpg" alt="Image" style="max-width:100%;">
-                                    </a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="image/jdphoto/jidi10.jpg" alt="Image" style="max-width:100%;">
-                                    </a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="image/jdphoto/jidi11.jpg" alt="Image" style="max-width:100%;">
-                                    </a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#" class="thumbnail">
-                                        <img src="image/jdphoto/jidi6.jpg" alt="Image" style="max-width:100%;">
-                                    </a>
-                                </div>
-                            </div>
-                            <!--.row-->
-                        </div>
-                        <!--.item-->
+                <div class="jidiname col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                    <div class="text show-main-text">
+                        <h3>李长云流浪小动物救助基地</h3>
                     </div>
-                    <!--.carousel-inner-->
-                    <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
-                    <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
                 </div>
-                <!--.Carousel-->
+                <div class="adoption-rule first-row col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                    <h3>领养规则</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque consequatur, ratione aliquam quaerat
+                        blanditiis dolore voluptatibus enim sunt modi earum ea ab accusamus, ipsam doloremque dolores repellat!
+                        Quo, molestias illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at velit doloribus
+                        deserunt quas fuga tenetur nemo eos ipsum repellat fugiat, perspiciatis earum. At a aspernatur ullam
+                        hic iusto pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi beatae aut laudantium
+                        culpa vitae dolore hic consectetur debitis corrupti possimus, nobis doloremque.</p>
+                </div>
+                <div class="first-row col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                    <h3>领养步骤:</h3>
+                    <div class="adoption-step one col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <h4>第一步:</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, consequatur recusandae ratione aliquid
+                            quas dolorem? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="adoption-step two col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <h4>第二步:</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, consequatur recusandae ratione aliquid
+                            quas dolorem? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="adoption-step three col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <h4>第三步:</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, consequatur recusandae ratione aliquid
+                            quas dolorem? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="first-row adoption-bodyimage1 col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                    <img src="image/adoptionimage.jpg" alt="adoption-image">
+                </div>
+                <div class="first-row adoption-bodyimage1 col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                <h3>近期被领养</h3>
+                </div>
+                <div class="adoption-bodyimage2 col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                    <img src="image/adoptionimage1.png" alt="dogs">
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ======================= Footer ==================== -->
+    <div class="footer">
+        <div class="social-media">
+            <p>
+                <a href="#code">微信二维码</a>
+                <a href="https://weibo.com/u/6298345939?refer_flag=1001030201_" target="_blank">微博</a>
+            </p>
+        </div>
+        <p class="footer-phone">电话: 111111222222</p>
+        <p>QQ: 2075990759
+            <br>467765369(群)</p>
+        <p>邮箱: 2075990759@qq.com</p>
+        <p class="footer-address">地址: 安徽省合肥市长丰县双墩镇富民村</p>
+        <p class="copyright">&copy 合肥李长云流浪动物救助基地.
+            <br>All Rights Reserved.</p>
+        <p class="designer">设计/Web designer: 聂芸/Yun Nie
+            <a href="http://www.nystudiohome.com" target="_blank">http://www.nystudiohome.com</a>
+        </p>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 

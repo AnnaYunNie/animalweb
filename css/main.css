@@ -23,15 +23,6 @@ body {
     box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-.title {
-    text-align: center;
-}
-
 img {
     max-width: 100%;
     width: 100%;
@@ -226,8 +217,8 @@ a:hover {
 
 
 /* ======== show =========== */
-.showtitle img {
-    max-height: 1000px;
+.pages-headerimage img {
+    max-height: 900px;
     min-height: 260px;
     display: block;
     width: 100%;
@@ -240,7 +231,7 @@ a:hover {
     margin-bottom: 6px;
 }
 .show-main-text {
-    padding: 1px;
+    padding: 1px 0;
     box-shadow: 4px 4px 6px 4px rgb(102, 73, 53);
     border: 2px solid blanchedalmond;
     background-color: rgb(255, 253, 250);
@@ -255,6 +246,23 @@ a:hover {
     border: 2px outset rgb(138, 106, 66);
 }
 
+/* ======== adoption=========== */
+.adoption-rule p {
+    text-align: left;
+}
+.adoption-step.one, .adoption-step.three {
+    border-top: 1px solid rgb(102, 73, 53);
+    border-bottom: 1px solid rgb(102, 73, 53);
+}
+.adoption-bodyimage1 img {
+    max-width: 500px;
+    border-radius: 50%;
+}
+.adoption-bodyimage2 {
+    border: 5px ridge rgb(138, 106, 66);
+    background-color:rgb(255, 242, 226);
+}
+
 
 /* ======== footer =========== */
 
@@ -267,6 +275,9 @@ a:hover {
 .social-media a {
     color: white;
     text-decoration: underline;
+}
+.footer p {
+    font-size: smaller;
 }
 
 @media only screen and (min-width: 768px) {
@@ -299,8 +310,14 @@ a:hover {
         font-size: smaller;
     }
 
-     /* ========== show ========= */
-
+     /* ========== adoption ========= */
+     .adoption-step.one, .adoption-step.three {
+         border: none;
+     }
+     .adoption-step.two{
+        border-left: 1px solid rgb(102, 73, 53);
+        border-right: 1px solid rgb(102, 73, 53);
+    }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -426,6 +443,8 @@ a:hover {
         }
     }
 
-    /* ========== show ========= */
-
+    /* ========== adoption ========= */
+    .adoption-bodyimage2 {
+        border: 10px ridge rgb(138, 106, 66);
+    }
 }
