@@ -284,6 +284,10 @@ a:hover {
 
 /* ========== finding ========= */
 
+.joinusimage {
+    background-color: blanchedalmond;
+    border: 6px ridge rgb(138, 106, 66);
+}
 
 /* ========== single-post ========= */
 
